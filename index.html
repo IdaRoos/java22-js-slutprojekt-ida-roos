@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer=""></script>
+    <title>Slutprojekt javascript</title>
+</head>
+<body>
+    <nav class="formContainer">
+    <form>
+        <label for="searchText">Image text:</label>
+        <input id="searchText" type="text" placeholder="Search text">
+        <label for="amount">Choose amount:</label>
+        <select id="amount" name="amount">
+          <option id="amountInput" value="1" selected>1</option>
+          <option id="amountInput" value="5">5</option>
+          <option id="amountInput" value="10">10</option>
+          <option id="amountInput" value="20">20</option>
+          <option id="amountInput" value="50">50</option>
+          <option id="amountInput" value="75">75</option>
+          <option id="amountInput" value="100">100</option>
+        </select>
+
+     <label for="size">Choose size:</label>
+<select id="size" name="size">
+  <option id="sizeInput" value="w">small</option>
+  <option id="sizeInput" value="c">medium</option>
+  <option id="sizeInput" value="b">large</option>
+</select>
+<label for="sort"> Sort after:</label><br>
+<select id="sort" name="size">
+    <option id="sortInput" value="relevance">Relevance</option>
+    <option id="sortInput" value="date-posted-desc">Latest uploaded</option>
+    <option id="sortInput" value="interestingness-desc">Interestingness</option>
+  </select>
+        <button id="search">Search images</button>
+    </form>
+</nav>
+    <div id="imgDiv"></div>
+</body>
+</html>
